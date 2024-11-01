@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "classmap": [
+      "db",
+      "fdo",
+      "server",
+      "common",
+      "admin",
+      "http"
+    ]
+  }
+}

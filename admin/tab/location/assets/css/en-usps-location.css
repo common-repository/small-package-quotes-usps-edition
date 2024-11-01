@@ -1,0 +1,296 @@
+/* Location */
+
+.en_popup_location_form {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    height: 500px;
+    overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.confirmation_location_delete .en_popup_location_form {
+    height: auto !important;
+    overflow-y: auto !important;
+}
+
+.en_popup_location_form .en_close_popup_location {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.en_hide_popup_location {
+    margin: 3% auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.en_usps_location_btn {
+    clear: both;
+    float: right;
+    margin: 10px !important;
+}
+
+.en_popup_location_form .en_location_input_field {
+    margin: 10px;
+    width: 57.9%;
+    padding: 5px;
+    float: right;
+    height: 40px;
+}
+
+.en_popup_location_form .en_multi_city_change,
+.en_popup_location_form #en_location_nickname,
+.en_popup_location_form #en_usps_location_zip,
+.en_popup_location_form #en_location_city,
+.en_popup_location_form #en_location_state,
+.en_popup_location_form #en_location_country {
+    margin: 10px 10px 0px;
+    padding: 5px;
+}
+
+.en_popup_location_form .en_location_checkout_field input {
+    float: right;
+    margin: 10px 0px 0px 8px !important;
+}
+
+.en_popup_location_form .en_location_checkout_field {
+    width: 43%;
+}
+
+.en_popup_location_form label {
+    font-weight: 600;
+    float: left;
+    line-height: 3.5;
+}
+
+.en_location_dropship_main_div ~ .submit {
+    display: none;
+}
+
+.en_popup_location_overly {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.en_location_db_data,
+.en_location_custom_data {
+    display: none;
+}
+
+.en_location_icons a {
+    margin: 3px;
+    text-decoration: none;
+}
+
+.en_popup_location_input_field {
+    clear: both;
+}
+
+#en_popup_location_heading {
+    float: left;
+}
+
+label[for="en_usps_location_zip"]:after,
+label[for="en_location_city"]:after,
+label[for="en_location_state"]:after,
+label[for="en_location_country"]:after {
+    content: " *";
+    color: red;
+}
+
+.en_location_error {
+    color: #ff0000;
+    font-size: 11px;
+    margin: 0 0 0 40.2%;
+    width: 100%;
+    display: block;
+}
+
+.en_location_error_message {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-left: 4px solid #dc3232;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 15px 2px 0px;
+    padding: 10px 12px;
+    clear: both;
+    display: none;
+}
+
+.en_location_success_message {
+    background: #fff none repeat scroll 0 0;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 15px 2px 0px;
+    padding: 10px 12px;
+    clear: both;
+    display: none;
+}
+
+.spinner_disable {
+    color: #000000;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.en_location_table {
+    font-family: 'Arial';
+    margin: 25px auto 40px;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    width: 100%;
+    background: #fff;
+}
+
+.en_location_table th {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #e1e1e1;
+    color: #0073aa;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.en_location_table td,
+.en_location_table th {
+    color: #555;
+    padding: 12px 35px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.en_confirmation_buttons {
+    float: right;
+    margin-top: 10px;
+}
+
+/**
+Location Tags
+ */
+
+.bootstrap-tagsinput {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: 4px 6px;
+    color: #555;
+    vertical-align: middle;
+    line-height: 22px;
+    cursor: text;
+}
+
+.bootstrap-tagsinput {
+    margin: 10px;
+    width: 55.5%;
+    padding: 5px;
+    float: right;
+    min-height: 30px;
+    height: auto;
+}
+
+.bootstrap-tagsinput input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 6px;
+    margin: 0;
+    width: auto;
+    max-width: inherit;
+}
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+    color: #777;
+    opacity: 1;
+}
+
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+    color: #777;
+}
+
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+    color: #777;
+}
+
+.bootstrap-tagsinput input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.bootstrap-tagsinput .tag {
+    background: none repeat scroll 0 0 #ccc;
+    border-radius: 2px;
+    color: black;
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    padding: 4px 10px 4px 4px;
+    margin: 2px 10px 2px 0;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.bootstrap-tagsinput .tag span {
+    display: inline-block;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+    content: "x";
+    padding: 0px 2px;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.en_plan_notification,
+.en_plan_notification:hover {
+    text-decoration: none;
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+    margin: 5px 0 0 6px;
+    display: inline-block;
+}
+
+#en_disabled_plan .bootstrap-tagsinput,
+.en_disabled_plan {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.en_instore_pickup_notification .en_plan_notification {
+    margin: 16px 0px 0px 50px !important;
+}
+
+.en_float_right {
+    float: right;
+}
+
+.en_float_left {
+    float: left;
+}
